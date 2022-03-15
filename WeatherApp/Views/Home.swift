@@ -9,8 +9,32 @@ import SwiftUI
 
 struct Home: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        
+        ZStack {
+            Color("background")
+                .edgesIgnoringSafeArea(.all)
+            
+            VStack {
+                
+                Spacer()
+                
+                LocationView()
+                
+                Spacer()
+                
+                DegreeView()
+                
+                Spacer()
+                
+                TimeView()
+                
+                Spacer()
+                
+            }
+            
+        }
+        
+        
     }
     
 }

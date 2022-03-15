@@ -10,20 +10,23 @@ import SwiftUI
 struct LocationView: View {
     var body: some View {
         
-        HStack() {
+        HStack {
             
             Image(systemName: "location.fill")
                 .resizable()
                 .scaledToFill()
-                .frame(width: 50, height: 50)
+                .frame(width: 30, height: 30)
                 .foregroundColor(.white)
             
             Text("Recklinghausen")
                 .foregroundColor(.white)
-                .font(.system(size: 45))
+                .font(.system(size: 30))
+                
+                
                 
                 
         }
+        .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
         .background(Color("background"))
     }
 }

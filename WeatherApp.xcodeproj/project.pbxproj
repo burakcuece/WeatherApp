@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7213566327DFD5080074F398 /* DegreeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7213566227DFD5080074F398 /* DegreeView.swift */; };
+		7213566527DFDF2F0074F398 /* TimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7213566427DFDF2F0074F398 /* TimeView.swift */; };
 		721C9D6827DF71DD00B239F6 /* WeatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721C9D6727DF71DD00B239F6 /* WeatherApp.swift */; };
 		721C9D6A27DF71DD00B239F6 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721C9D6927DF71DD00B239F6 /* Home.swift */; };
 		721C9D6C27DF71DE00B239F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 721C9D6B27DF71DE00B239F6 /* Assets.xcassets */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7213566227DFD5080074F398 /* DegreeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DegreeView.swift; sourceTree = "<group>"; };
+		7213566427DFDF2F0074F398 /* TimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeView.swift; sourceTree = "<group>"; };
 		721C9D6427DF71DD00B239F6 /* WeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		721C9D6727DF71DD00B239F6 /* WeatherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherApp.swift; sourceTree = "<group>"; };
 		721C9D6927DF71DD00B239F6 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
@@ -79,6 +83,8 @@
 			children = (
 				721C9D6927DF71DD00B239F6 /* Home.swift */,
 				721C9D7B27DF75A800B239F6 /* LocationView.swift */,
+				7213566227DFD5080074F398 /* DegreeView.swift */,
+				7213566427DFDF2F0074F398 /* TimeView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -176,6 +182,8 @@
 			files = (
 				721C9D6A27DF71DD00B239F6 /* Home.swift in Sources */,
 				721C9D7C27DF75A800B239F6 /* LocationView.swift in Sources */,
+				7213566527DFDF2F0074F398 /* TimeView.swift in Sources */,
+				7213566327DFD5080074F398 /* DegreeView.swift in Sources */,
 				721C9D6827DF71DD00B239F6 /* WeatherApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
