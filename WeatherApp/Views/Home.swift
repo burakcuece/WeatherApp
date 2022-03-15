@@ -30,6 +30,10 @@ struct Home: View {
                 
                 Spacer()
                 
+                DayView()
+                
+                Spacer()
+                
             }
             
         }

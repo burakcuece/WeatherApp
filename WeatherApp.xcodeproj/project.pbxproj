@@ -14,6 +14,7 @@
 		721C9D6C27DF71DE00B239F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 721C9D6B27DF71DE00B239F6 /* Assets.xcassets */; };
 		721C9D6F27DF71DE00B239F6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 721C9D6E27DF71DE00B239F6 /* Preview Assets.xcassets */; };
 		721C9D7C27DF75A800B239F6 /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721C9D7B27DF75A800B239F6 /* LocationView.swift */; };
+		7258F93F27E0B9890086A031 /* DayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7258F93E27E0B9890086A031 /* DayView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		721C9D6E27DF71DE00B239F6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		721C9D7927DF733600B239F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		721C9D7B27DF75A800B239F6 /* LocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
+		7258F93E27E0B9890086A031 /* DayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 				721C9D7B27DF75A800B239F6 /* LocationView.swift */,
 				7213566227DFD5080074F398 /* DegreeView.swift */,
 				7213566427DFDF2F0074F398 /* TimeView.swift */,
+				7258F93E27E0B9890086A031 /* DayView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -181,6 +184,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				721C9D6A27DF71DD00B239F6 /* Home.swift in Sources */,
+				7258F93F27E0B9890086A031 /* DayView.swift in Sources */,
 				721C9D7C27DF75A800B239F6 /* LocationView.swift in Sources */,
 				7213566527DFDF2F0074F398 /* TimeView.swift in Sources */,
 				7213566327DFD5080074F398 /* DegreeView.swift in Sources */,

@@ -11,10 +11,10 @@ struct DegreeView: View {
     
     var body: some View {
         
-        VStack (alignment: .center)  {
+        VStack {
             
             Text("25°")
-                .fontWeight(.semibold)
+                .fontWeight(.medium)
                 .foregroundColor(.white)
                 .font(.system(size: 90))
                 
@@ -30,7 +30,7 @@ struct DegreeView: View {
                 .font(.system(size: 30))
 
         }
-        .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+        .padding(.all)
         .background(Color("background"))
         
     }
