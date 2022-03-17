@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct LocationView: View {
+    
+    @ObservedObject var viewModel: WeatherViewModel
+    
     var body: some View {
         
         HStack {
@@ -18,21 +21,21 @@ struct LocationView: View {
                 .frame(width: 30, height: 30)
                 .foregroundColor(.white)
             
-            Text("Recklinghausen")
+            Text(viewModel.cityName)
                 .foregroundColor(.white)
                 .font(.system(size: 30))
                 
                 
-                
+            
                 
         }
-        .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+        .padding(.all)
         .background(Color("background"))
     }
 }
 
 struct LocationView_Previews: PreviewProvider {
     static var previews: some View {
-        LocationView()
+        LocationView(viewModel: WeatherViewModel(weatherService: WeatherService()))
     }
 }

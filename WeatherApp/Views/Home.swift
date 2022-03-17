@@ -8,33 +8,33 @@
 import SwiftUI
 
 struct Home: View {
+    
+    @ObservedObject var viewModel: WeatherViewModel
+    
     var body: some View {
         
-        ZStack {
-            Color("background")
-                .edgesIgnoringSafeArea(.all)
             
-            VStack {
+            ZStack {
+                Color("background")
+                    .edgesIgnoringSafeArea(.all)
                 
-                Spacer()
+                ScrollView {
+
+                VStack {
+                    
+                    Spacer()
+                                        
+                    LocationView(viewModel: WeatherViewModel(weatherService: WeatherService()))
+                    
+                    Spacer()
+                    
+                    DegreeView(viewModel: WeatherViewModel(weatherService: WeatherService()))
+                    
+                   
+                    
+                }
                 
-                LocationView()
-                
-                Spacer()
-                
-                DegreeView()
-                
-                Spacer()
-                
-                TimeView()
-                
-                Spacer()
-                
-                DayView()
-                
-                Spacer()
-                
-            }
+                }.onAppear(perform: viewModel.refresh)
             
         }
         
@@ -45,6 +45,6 @@ struct Home: View {
 
 struct Home_Previews: PreviewProvider {
     static var previews: some View {
-        Home()
+        Home(viewModel: WeatherViewModel(weatherService: WeatherService()))
     }
 }

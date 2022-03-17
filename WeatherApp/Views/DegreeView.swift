@@ -9,22 +9,24 @@ import SwiftUI
 
 struct DegreeView: View {
     
+    @ObservedObject var viewModel: WeatherViewModel
+    
     var body: some View {
         
         VStack {
             
-            Text("25°")
+            Text(viewModel.temperature)
                 .fontWeight(.medium)
                 .foregroundColor(.white)
                 .font(.system(size: 90))
                 
-            Image(systemName: "sun.max.fill")
+            Image(viewModel.weatherIcon)
                 .resizable()
                 .scaledToFit()
                 .frame(width: 150, height: 150)
                 .foregroundColor(.yellow)
 
-            Text("sonnig")
+            Text(viewModel.weatherDescription)
                 .fontWeight(.light)
                 .foregroundColor(.white)
                 .font(.system(size: 30))
@@ -38,6 +40,6 @@ struct DegreeView: View {
 
 struct DegreeView_Previews: PreviewProvider {
     static var previews: some View {
-        DegreeView()
+        DegreeView(viewModel: WeatherViewModel(weatherService: WeatherService()))
     }
 }
