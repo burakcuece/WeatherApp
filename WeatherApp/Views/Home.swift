@@ -10,6 +10,7 @@ import SwiftUI
 
 struct Home: View {
     
+    
     @StateObject private var forecastListVM = ForecastListViewModel()
     
     var body: some View {
