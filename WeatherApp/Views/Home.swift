@@ -25,7 +25,7 @@ struct Home: View {
                     .frame(width: 100)
                     .padding(.vertical)
                     HStack {
-                        TextField("Enter Location", text: $forecastListVM.location, onCommit: {
+                        TextField("Ort eingeben", text: $forecastListVM.location, onCommit: {
                             forecastListVM.getWeatherForecast()
                         }).textFieldStyle(RoundedBorderTextFieldStyle())
                             .overlay(
@@ -78,12 +78,12 @@ struct Home: View {
                     .listStyle(PlainListStyle())
                 }
                 .padding(.horizontal)
-                .navigationTitle("Mobile Weather")
+                .navigationTitle("Wetter")
                 .alert(item: $forecastListVM.appError) { appAlert in
                     Alert(title: Text("Error"),
                           message: Text("""
                                 \(appAlert.errorString)
-                            Please try again later!
+                            Bitte versuchen Sie es später noch einmal!
                             """
                                        )
                     )
@@ -94,7 +94,7 @@ struct Home: View {
                     Color.white
                         .opacity(0.3)
                         .ignoresSafeArea()
-                    ProgressView("Fetching Weather")
+                    ProgressView("Wetter abrufen")
                         .padding()
                         .background(
                             RoundedRectangle(cornerRadius: 10)
@@ -111,5 +111,7 @@ struct Home: View {
 struct Home_Previews: PreviewProvider {
     static var previews: some View {
         Home()
+            .environment(\.locale, Locale(identifier: "ger"))
+
     }
 }

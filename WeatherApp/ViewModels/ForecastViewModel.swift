@@ -60,7 +60,7 @@ struct ForecastViewModel {
         return "☁️ \(forecast.clouds)%"
     }
     var humidity: String {
-        return "Humidity: \(forecast.humidity)%"
+        return "Feuchtigkeit: \(forecast.humidity)%"
     }
     
     var weatherIconURL: URL {
